@@ -1,0 +1,16 @@
+service: "src.service:AdmissionPredictionService"
+description: "Admissions prediction service"
+labels:
+  owner: "ThomasMaisch"
+  project: "admissions_prediction"
+include:
+  - "src/"
+models:
+  - admission_lr:latest
+python:
+  packages:
+    - bentoml==1.4.39
+    - scikit-learn==1.9.1
+    - pandas==3.0.6
+    - pydantic==2.13.5
+    - pyjwt==2.15.1

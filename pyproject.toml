@@ -1,0 +1,29 @@
+[project]
+name = "examen-bentoml"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "bentoml>=1.4.39",
+    "pandas>=3.0.6",
+    "pydantic>=2.13.5",
+    "pyjwt>=2.15.1",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+examen-bentoml = "examen_bentoml:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "pytest>=9.1.1",
+    "requests>=2.34.2",
+]

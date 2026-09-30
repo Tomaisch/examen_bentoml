@@ -1,4 +1,7 @@
 .DS_Store
 .DS_Store?
-/venv
+.venv/
 /clean_data.csv
+admission_prediction_service.tar
+__pycache__/
+data/
